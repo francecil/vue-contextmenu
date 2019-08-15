@@ -3,9 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import ContextMenu from "./contextmenu";
+Vue.use(ContextMenu);
+// import { ContextMenu } from "./contextmenu";
+// Vue.component(ContextMenu.name, ContextMenu);
 
 Vue.config.productionTip = false;
-Vue.use(ContextMenu);
+
 new Vue({
   router,
   store,

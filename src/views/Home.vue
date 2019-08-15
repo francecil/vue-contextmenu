@@ -6,7 +6,7 @@
       :dashbox="dashbox"
       @show-contextmenu="showContextMenu"
     />
-    <ContextMenu
+    <context-menu
       :show="contextMenuVisible"
       :offset="contextMenuOffset"
       @update:show="show => (contextMenuVisible = show)"
@@ -14,18 +14,18 @@
       <div>复制</div>
       <div>粘贴</div>
       <div>剪切</div>
-    </ContextMenu>
+    </context-menu>
   </div>
 </template>
 
 <script>
-import ContextMenu from "@/components/ContextMenu.vue";
+// import { ContextMenu } from "@/contextmenu";
 import Dashbox from "./Dashbox.vue";
 
 export default {
   name: "home",
   components: {
-    ContextMenu,
+    // "context-menu": ContextMenu,
     Dashbox
   },
   data() {
