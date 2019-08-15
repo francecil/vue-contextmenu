@@ -1,4 +1,6 @@
-# vue-demo
+# contextmenu-demo
+
+右键菜单组件 demo
 
 ## Project setup
 ```
