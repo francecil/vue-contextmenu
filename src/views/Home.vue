@@ -6,7 +6,7 @@
       :dashbox="dashbox"
       @show-contextmenu="showContextMenu"
     />
-    <ContextMenu :show="contextMenuVisible">
+    <ContextMenu :show="contextMenuVisible" :offset="contextMenuOffset">
       <div>复制</div>
       <div>粘贴</div>
       <div>剪切</div>
@@ -27,6 +27,10 @@ export default {
   data() {
     return {
       contextMenuVisible: false,
+      contextMenuOffset: {
+        left: 0,
+        top: 0
+      },
       dashboxs: [
         {
           id: 1,
@@ -45,6 +49,10 @@ export default {
     showContextMenu(e) {
       e.preventDefault();
       this.contextMenuVisible = true;
+      this.contextMenuOffset = {
+        left: e.clientX,
+        top: e.clientY
+      };
     }
   }
 };
