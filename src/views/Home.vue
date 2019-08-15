@@ -43,7 +43,7 @@ export default {
         },
         {
           id: 2,
-          style: "left:400px;top:820px;width:100px;height:100px",
+          style: "left:1800px;top:820px;width:100px;height:100px",
           content: "test2"
         }
       ]
