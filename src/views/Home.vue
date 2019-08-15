@@ -1,18 +1,51 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Dashbox
+      v-for="dashbox in dashboxs"
+      :key="dashbox.id"
+      :dashbox="dashbox"
+      @show-contextmenu="showContextMenu"
+    />
+    <ContextMenu :show="contextMenuVisible">
+      <div>复制</div>
+      <div>粘贴</div>
+      <div>剪切</div>
+    </ContextMenu>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import ContextMenu from "@/components/ContextMenu.vue";
+import Dashbox from "./Dashbox.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    ContextMenu,
+    Dashbox
+  },
+  data() {
+    return {
+      contextMenuVisible: false,
+      dashboxs: [
+        {
+          id: 1,
+          style: "left:200px;top:200px;width:100px;height:100px",
+          content: "test1"
+        },
+        {
+          id: 2,
+          style: "left:400px;top:400px;width:100px;height:100px",
+          content: "test2"
+        }
+      ]
+    };
+  },
+  methods: {
+    showContextMenu(e) {
+      e.preventDefault();
+      this.contextMenuVisible = true;
+    }
   }
 };
 </script>
