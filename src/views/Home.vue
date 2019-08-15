@@ -6,7 +6,11 @@
       :dashbox="dashbox"
       @show-contextmenu="showContextMenu"
     />
-    <ContextMenu :show="contextMenuVisible" :offset="contextMenuOffset">
+    <ContextMenu
+      :show="contextMenuVisible"
+      :offset="contextMenuOffset"
+      @update:show="show => (contextMenuVisible = show)"
+    >
       <div>复制</div>
       <div>粘贴</div>
       <div>剪切</div>
