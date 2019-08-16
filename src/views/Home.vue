@@ -56,8 +56,8 @@ export default {
       e.preventDefault();
       this.contextMenuVisible = true;
       this.contextMenuOffset = {
-        left: e.clientX,
-        top: e.clientY
+        left: e.pageX,
+        top: e.pageY
       };
     }
   }

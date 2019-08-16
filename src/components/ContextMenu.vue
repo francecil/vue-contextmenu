@@ -81,7 +81,7 @@ export default {
 .context-menu {
   z-index: 1000;
   display: block;
-  position: fixed;
+  position: absolute;
   &-enter,
   &-leave-to {
     opacity: 0;
