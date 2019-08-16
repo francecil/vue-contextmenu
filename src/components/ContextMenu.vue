@@ -68,6 +68,7 @@ export default {
           : -gap;
       let leftover =
         this.offset.left + menuWidth + gap >= docWidth ? menuWidth + gap : -gap;
+      console.log(this.offset.top, docHeight, menuHeight);
       this.style = {
         left: `${this.offset.left - leftover}px`,
         top: `${this.offset.top - topover}px`

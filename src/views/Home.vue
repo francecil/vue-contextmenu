@@ -1,20 +1,22 @@
 <template>
   <div class="home">
-    <Dashbox
-      v-for="dashbox in dashboxs"
-      :key="dashbox.id"
-      :dashbox="dashbox"
-      @show-contextmenu="showContextMenu"
-    />
-    <context-menu
-      :show="contextMenuVisible"
-      :offset="contextMenuOffset"
-      @update:show="show => (contextMenuVisible = show)"
-    >
-      <div>复制</div>
-      <div>粘贴</div>
-      <div>剪切</div>
-    </context-menu>
+    <div class="content">
+      <Dashbox
+        v-for="dashbox in dashboxs"
+        :key="dashbox.id"
+        :dashbox="dashbox"
+        @show-contextmenu="showContextMenu"
+      />
+      <context-menu
+        :show="contextMenuVisible"
+        :offset="contextMenuOffset"
+        @update:show="show => (contextMenuVisible = show)"
+      >
+        <div>复制</div>
+        <div>粘贴</div>
+        <div>剪切</div>
+      </context-menu>
+    </div>
   </div>
 </template>
 
@@ -61,3 +63,16 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.home {
+  margin: 10px;
+  overflow: scroll;
+  height: 1500px;
+  width: 100%;
+  background: #eee;
+  .content {
+    position: relative;
+    height: 2000px;
+  }
+}
+</style>
