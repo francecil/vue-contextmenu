@@ -1,4 +1,4 @@
-import ContextMenu from "@/components/ContextMenu.vue";
+import ContextMenu from "./context-menu.vue";
 const plugin = {};
 plugin.install = function(Vue) {
   Vue.component(ContextMenu.name, ContextMenu);

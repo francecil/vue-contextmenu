@@ -1,19 +1,24 @@
 {
-  "name": "contexmenu-demo",
-  "version": "0.1.1",
-  "private": true,
+  "name": "vcontextmenu",
+  "version": "1.0.0",
+  "private": false,
+  "description": "基于 Vue 的右键菜单",
+  "main": "lib/vcontextmenu.umd.min.js",
+  "keyword": "vcontextmenu contextmenu context-menu",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve",
+    "build:demo": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name vcontextmenu --dest lib src/index.js",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
@@ -26,5 +31,9 @@
     "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francecil/vue-contextmenu"
   }
 }
