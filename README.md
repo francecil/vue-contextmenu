@@ -8,7 +8,9 @@ npm install @gahing/vcontextmenu
 ```
 ## 在线demo
 
-### 使用
+[vcontextmenu](https://francecil.github.io/vue-contextmenu/)
+
+## 使用
 ```js
 import ContextMenu from '@gahing/vcontextmenu'
 import '@gahing/vcontextmenu/lib/vcontextmenu.css'
