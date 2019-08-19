@@ -1,5 +1,5 @@
 {
-  "name": "vcontextmenu",
+  "name": "@gahing/vcontextmenu",
   "version": "1.0.0",
   "private": false,
   "description": "基于 Vue 的右键菜单",
