@@ -14,6 +14,6 @@ npm install @gahing/vcontextmenu
 ```js
 import ContextMenu from '@gahing/vcontextmenu'
 import '@gahing/vcontextmenu/lib/vcontextmenu.css'
-Vue.use(VueContextMenu)
+Vue.use(ContextMenu)
 ```
 
