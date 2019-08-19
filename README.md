@@ -2,30 +2,16 @@
 
 右键菜单组件 demo
 
-## Project setup
+## 安装
 ```
-yarn install
+npm install @gahing/vcontextmenu
+```
+## 在线demo
+
+### 使用
+```js
+import ContextMenu from '@gahing/vcontextmenu'
+import '@gahing/vcontextmenu/lib/vcontextmenu.css'
+Vue.use(VueContextMenu)
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
