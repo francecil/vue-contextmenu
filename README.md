@@ -16,4 +16,8 @@ import ContextMenu from '@gahing/vcontextmenu'
 import '@gahing/vcontextmenu/lib/vcontextmenu.css'
 Vue.use(ContextMenu)
 ```
+或者采用 [vue-cli-plugin-contextmenu](https://github.com/francecil/vue-cli-plugin-contextmenu)
+```sh
+vue add contextmenu
+```
 
