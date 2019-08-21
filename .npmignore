@@ -2,6 +2,7 @@
 examples/
 dist/
 public/
+tests/
 
 # 忽略指定文件
 vue.config.js
