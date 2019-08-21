@@ -2,26 +2,26 @@
   "name": "@gahing/vcontextmenu",
   "version": "1.0.0",
   "private": false,
-  "description": "基于 Vue 的右键菜单",
-  "main": "lib/vcontextmenu.umd.min.js",
-  "keyword": "vcontextmenu contextmenu context-menu",
+  "description": "基于 Vue 的右键菜单插件",
   "scripts": {
-    "start": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
     "build:demo": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name vcontextmenu --dest lib src/index.js",
-    "lint": "vue-cli-service lint",
-    "ghpages": "npm run build:demo && node build/gh-pages.js"
+    "ghpages": "npm run build:demo && node build/gh-pages.js",
+    "start": "vue-cli-service serve",
+    "test:unit": "vue-cli-service test:unit"
   },
+  "main": "lib/vcontextmenu.umd.min.js",
   "dependencies": {},
-  "peerDependencies": {
-    "vue": "^2.6.10"
-  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-unit-mocha": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
     "core-js": "^2.6.5",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
@@ -34,6 +34,10 @@
     "vue-router": "^3.0.3",
     "vue-template-compiler": "^2.6.10"
   },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  },
+  "keyword": "vcontextmenu contextmenu context-menu",
   "repository": {
     "type": "git",
     "url": "https://github.com/francecil/vue-contextmenu"

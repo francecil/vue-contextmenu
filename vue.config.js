@@ -1,5 +1,9 @@
+const path = require("path");
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
 module.exports = {
-  publicPath: './',
+  publicPath: "./",
   pages: {
     index: {
       entry: "examples/main.js",
@@ -17,5 +21,6 @@ module.exports = {
       .tap(options => {
         return options;
       });
+    config.resolve.alias.set("examples", resolve("examples"));
   }
 };

@@ -1,4 +1,4 @@
-# contextmenu-demo
+# vue-contextmenu
 
 右键菜单组件 demo
 
