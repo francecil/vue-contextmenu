@@ -81,4 +81,6 @@ npm start
 npm run build:demo
 # 源码打包，生成lib目录
 npm run build:lib
+# 发布gh-pages
+npm run ghpages
 ```

@@ -9,27 +9,29 @@
     "start": "vue-cli-service serve",
     "build:demo": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name vcontextmenu --dest lib src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "ghpages": "npm run build:demo && node build/gh-pages.js"
   },
   "dependencies": {},
   "peerDependencies": {
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3",
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.9.0",
     "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
     "vue-template-compiler": "^2.6.10"
   },
   "repository": {
